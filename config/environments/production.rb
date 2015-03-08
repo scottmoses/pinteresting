@@ -75,4 +75,8 @@ Rails.application.configure do
 
   # Do not dump schema after migrations.
   config.active_record.dump_schema_after_migration = false
+#required for heroku for devise gem to work
+# note to set for your host name
+config.action_mailer.default_url_options = { :host => 'https://omr-pinteresting-moses.herokuapp.com/' }
+
 end
